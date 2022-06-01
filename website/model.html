@@ -27,7 +27,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
     <a href="paper.html" class="w3-bar-item w3-button w3-hide-small w3-hover-grey">Technical paper</a>
-
     <a href="calculate.html" class="w3-bar-item w3-button w3-hide-small w3-hover-grey">Calculate Average Wait Time</a>
     <a href="model.html" class="w3-bar-item w3-button w3-hide-small w3-hover-grey">Model</a>
     <a href="https://github.com/KimiHolsapple/transit_lateness_analysis" class="w3-bar-item w3-button w3-hide-small w3-hover-grey">GitHub</a>
@@ -41,11 +40,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
-  <h4 class="w3-bar-item"><b>Dataset's collected</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="metro_data.html">Metro</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="loop_data.html">Loop</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="15.html">Weather</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="18.html">Students</a>
+  <h4 class="w3-bar-item"><b>Cleaned DataSets</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="metro_dt.html">Metro Data</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="loop_dt.html">Loop Data</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -57,24 +54,44 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
     <div class="w3-row w3-padding-64">
         <center>
-          <h1>Calculations </h1>
-
-          <label for="t_arrive">Time you arrived:</label>
-          <select name="t_arrive" id="t_arrive">
-            <option value="volvo">Morning</option>
-            <option value="saab">Afternoon</option>
-            <option value="mercedes">Night</option>
-          </select>
-
-          <label for="stop_id">Stop you're at:</label>
-          <select name="stop_id" id="stop_id">
-            <option value="volvo">1615</option>
-            <option value="volvo">1616</option>
-            <option value="volvo">1617</option>
-            <option value="volvo">2102</option>
-            <option value="volvo">2448</option>
-          </select>
+          <h1> Modeling Data </h1>
         </center>
+
+        <div class=" w3-container">
+            <h2 class="w3-text-teal"> Linear Regression</h2>
+            <p>
+             Transit Analysis is important in the development of cities and road systems.
+             Supply chains and quality of life are affected by traffic patterns. In this project
+             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
+             in order to make observations on the nature of traffic at UCSC.
+          </p>
+          <h3 class="w3-text-teal"> Results</h3>
+          <h3 class="w3-text-teal"> Validation</h3>
+        </div>
+
+        <div class=" w3-container">
+            <h2 class="w3-text-teal"> Quadratic Regression</h2>
+            <p>
+             Transit Analysis is important in the development of cities and road systems.
+             Supply chains and quality of life are affected by traffic patterns. In this project
+             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
+             in order to make observations on the nature of traffic at UCSC.
+          </p>
+          <h3 class="w3-text-teal"> Results</h3>
+          <h3 class="w3-text-teal"> Validation</h3>
+        </div>
+
+        <div class=" w3-container">
+            <h2 class="w3-text-teal"> Poisson Regression</h2>
+            <p>
+             Transit Analysis is important in the development of cities and road systems.
+             Supply chains and quality of life are affected by traffic patterns. In this project
+             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
+             in order to make observations on the nature of traffic at UCSC.
+          </p>
+          <h3 class="w3-text-teal"> Results</h3>
+          <h3 class="w3-text-teal"> Validation</h3>
+        </div>
 
         
       </div>
