@@ -43,8 +43,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <h4 class="w3-bar-item"><b>Dataset's collected</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="metro_data.html">Metro</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="loop_data.html">Loop</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="15.html">Weather</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="18.html">Students</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -59,26 +57,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
           <h1>Loop Dataset </h1>
           <h2> Taps UCSC </h2>
         </div>
+
+        <center><img width="800px" src="/assets/loop.png" alt="hmmm somthing went wrong""></center>
         
         <div class=" w3-container">
           <h2 class="w3-text-teal"> Description</h2>
           <p>
-           Transit Analysis is important in the development of cities and road systems.
-           Supply chains and quality of life are affected by traffic patterns. In this project
-           we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-           in order to make observations on the nature of traffic at UCSC.
+            Kerry Veenstra provided a log file that contained the actual arrival times of the different loop buses on campus. The data was collected from three stations: Taps/Base, Opers, and College $8$(Rachel Carson). Veenstra collected data for a week. The log file contained the date and time, bus ID, bus route (loop, special, out of service, etc), and latitude and longitude
         </p>
         </div>
 
         <div class=" w3-container">
-            <h2 class="w3-text-teal"> Stops Used </h2>
+            <h2 class="w3-text-teal"> Cleaning Process </h2>
             <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
+              All entries containing "OUT OF SERVICE" were removed, as well as all other routes besides entries labeled as "LOOP". The sheet was then ordered based on "Bus ID". Latitude and longitude were simplified and assigned to the three zones: Opers, Taps/Base, and College $8$. A "Time Only" column was created, as well as "Day Only", and scheduled departure was added. The Loop Website from the University states that buses depart from the base every $10-20$ minutes starting at 7:25am. We assume, for consistency and simplicity, that buses depart every 15 minutes. This scheduled departure time was assigned to each record that displayed a bus departing from Taps/Base. Then, a new column was created to show the difference between actual and scheduled departure. Positive values indicate that the bus was late, and negative values indicate that the bus was early. The sheet was then filtered to have only entries that contained a "Minutes Late" value; entries that had a blank entry for the difference of actual and scheduled departure were removed. The difference of actual departure time and scheduled time is calculated, and from this we find the average minutes late of the loop bus: $2.81$, or about $3$ minutes.
           </p>
-          </div>
+        </div>
         
 
         

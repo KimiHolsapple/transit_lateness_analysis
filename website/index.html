@@ -43,8 +43,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <h4 class="w3-bar-item"><b>Dataset's collected</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="metro_data.html">Metro</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="loop_data.html">Loop</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="15.html">Weather</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="18.html">Students</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -59,6 +57,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       <h1>Transit Lateness Analysis </h1>
       <h2>by Maxine Taubman and Kimi Holsapple </h2>
     </div>
+
+    <center><img src="/assets/ucsc_logo.png"></img></center>
+    
     
     <div class=" w3-container">
       <h2 class="w3-text-teal">Introduction</h2>
@@ -69,6 +70,20 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
        in order to make observations on the nature of traffic at UCSC.
     </p>
     </div>
+
+    <div class=" w3-container">
+    <p>
+      The goal of this project is to calculate and analyze trends in average minutes late of the loop and metro buses. 
+      Through this project, we will review the data collection process and how data was cleaned, interpret the data, explore possible models, analyze results and validation, review our original goals and goals met, reflect on our original timeline and end result, and explore possible improvements, limitations, and future work.\\
+
+      Understanding traffic patterns are critical to city planning, fare adjustments, and road capacity. Traffic affects overall quality of life and city pollution. 
+      Increased traffic congestion is linked to increased vehicle emissions and decreases air quality index making health conditions like asthma aggravated in cities with high pollution. 
+      Additionally waiting in traffic for long periods and the increased amount of time that it takes to travel decreased the overall quality of life with regions with heavy traffic. 
+      These also feed into economic considerations as using you vehicle more, by sitting in congested roadways increases gas use and decreases property values for homes near roadways with heavy traffic [https://www.irtba.org/QualityofLife].  
+      From the perspective of our campus and transportation offices, understanding these patterns are important to event planning and class scheduling. 
+      In this paper we will try to analyze traffic patterns on campus.
+    </p>
+  </div>
     <!-- <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
       <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
@@ -78,9 +93,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <div class="w3-row">
     <div class=" w3-container">
       <h2 class="w3-text-teal"> Related Work </h2>
-      <p>Data was collected and then cleaned. Data included bus stops/zones/IDs, time and day, bus type, and Actual arrival times. 
-      We then added the scheduled arrival times, and the difference was calculated. 
-      From here, we were able to see how late (positive values) or how early (negative values) the buses were.</p>
+      <p>
+        There are plenty of instances of queing theory which make up 
+        a large basis of academic works.
+
+        There is more reading that can be done here:
+        <a href="https://www.google.com/search?q=bus+paradox&oq=bus+paradox&aqs=chrome.0.0i512l2j0i22i30l8.6435j0j4&sourceid=chrome&ie=UTF-8"> Bus Paradox Link</a>
+
+    </p>
     </div>
    <!--  <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -90,8 +110,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <div class="w3-row w3-padding-64">
     <div class=" w3-container">
-      <h2 class="w3-text-teal">Model</h2>
-      <p>Bus Paradox, Poisson, Linear Regression?</p>
+      <h2 class="w3-text-teal">Models Used</h2>
+      <li>
+        Bus Paradox 
+      </li>
+      <li>
+        Poisson Regression
+      </li>
+      <li>
+        Linear Regression
+      </li>
     </div>
     <!-- <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>

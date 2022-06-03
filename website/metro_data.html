@@ -43,8 +43,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <h4 class="w3-bar-item"><b>Dataset's collected</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="metro_data.html">Metro</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="loop_data.html">Loop</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="15.html">Weather</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="18.html">Students</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -63,37 +61,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class=" w3-container">
           <h2 class="w3-text-teal"> Description</h2>
           <p>
-           Transit Analysis is important in the development of cities and road systems.
-           Supply chains and quality of life are affected by traffic patterns. In this project
-           we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-           in order to make observations on the nature of traffic at UCSC.
+            The metro data sets includes data web scraped from cruzmetro.com/arrivals and contains a weeks worth of data starting Tuesday April 19th, 2022. It follows 10 bus stops, 5 on eastbound routes and another 5 on westbound rounds. Their stop ids were recorded and they are defined in the python dictionary below:
         </p>
+        <img src="assets/stop_id.png" width="600px"></img>
         </div>
 
         <div class=" w3-container">
             <h2 class="w3-text-teal"> Stops Used </h2>
             <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
+              We determined it pertinent that location and type of bus would become important indicators of lateness alongside their arrival time. In order to find the zones, campus bus stops ids were mapped to 1 of 6 zones. Each zone corresponds to the nearest classroom locations for that location and tries to encode where students would get off on the bus to go to a specific class. For instance, students with classes in Baskin Engineering would most likely, if taking the bus to get to class, get off at a Science Hill bus stop. This meant that stop ids 1615 and 2674 would map to zone id 4. The zone divisions are shown below.
           </p>
-          </div>
-
-        <div class=" w3-container">
-            <h2 class="w3-text-teal"> Campus Zone Breakdowns</h2>
-            <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
-          </p>
+          <img src="assets/zone_id.png" width="600px"></img>
           </div>
 
         <div class=" w3-container">
             <h2 class="w3-text-teal"> 10</h2>
             <h3> eastbound </h3>
-            <img src="assets/10_route.png"  width="300em"></img>
+            <img src="assets/route_10.png"  width="300em"></img>
             <p>
              Transit Analysis is important in the development of cities and road systems.
              Supply chains and quality of life are affected by traffic patterns. In this project
@@ -105,7 +89,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class=" w3-container">
         <h2 class="w3-text-teal"> 20</h2>
         <h3> eastbound </h3>
-        <img src="assets/20_route.png"  width="300em"></img>
+        <img src="assets/route_20.png"  width="300em"></img>
         <p>
             Transit Analysis is important in the development of cities and road systems.
             Supply chains and quality of life are affected by traffic patterns. In this project
@@ -117,7 +101,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class=" w3-container">
             <h2 class="w3-text-teal"> 18</h2>
             <h3> eastbound </h3>
-            <img src="assets/18_route.png"  width="300em"></img>
+            <img src="assets/route_18.png"  width="300em"></img>
             <p>
              Transit Analysis is important in the development of cities and road systems.
              Supply chains and quality of life are affected by traffic patterns. In this project
@@ -129,7 +113,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class=" w3-container">
             <h2 class="w3-text-teal"> 15</h2>
             <h3> westbound </h3>
-            <img src="assets/15_route.png" width="200em"></img>
+            <img src="assets/route_15.png" width="200em"></img>
             <p>
              Transit Analysis is important in the development of cities and road systems.
              Supply chains and quality of life are affected by traffic patterns. In this project
@@ -141,7 +125,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <div class=" w3-container">
             <h2 class="w3-text-teal"> 19</h2>
             <h3> westbound </h3>
-            <img src="assets/19_route.png" width="300em"></img>
+            <img src="assets/rouye_19.png" width="300em"></img>
             <p>
              Transit Analysis is important in the development of cities and road systems.
              Supply chains and quality of life are affected by traffic patterns. In this project

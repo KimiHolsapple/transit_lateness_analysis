@@ -16,6 +16,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   top: 43px;
   bottom: 0;
   height: inherit;
+
+
 }
 </style>
 </head>
@@ -42,6 +44,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </a>
   <h4 class="w3-bar-item"><b>Cleaned DataSets</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="metro_dt.html">Metro Data</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="bus_sched_dt.html">Metro Schedule Data</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="loop_dt.html">Loop Data</a>
 </nav>
 
@@ -52,45 +55,50 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-main" style="margin-left:250px">
 
 
-    <div class="w3-row w3-padding-64">
+    <div class="w3-row w3-padding-64" style="overflow-x: scroll;">
         <center>
           <h1> Modeling Data </h1>
         </center>
 
         <div class=" w3-container">
             <h2 class="w3-text-teal"> Linear Regression</h2>
-            <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
-          </p>
-          <h3 class="w3-text-teal"> Results</h3>
-          <h3 class="w3-text-teal"> Validation</h3>
+          <center>
+            <h3>Loop</h3>
+            <img src="assets/loop_lin.png" width="700px"></im>
+            <h3>Metro</h3>
+            <img src="assets/metro_lin.png" width="700px"></im>
+          </center>
+
         </div>
 
         <div class=" w3-container">
             <h2 class="w3-text-teal"> Quadratic Regression</h2>
-            <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
-          </p>
-          <h3 class="w3-text-teal"> Results</h3>
-          <h3 class="w3-text-teal"> Validation</h3>
+            <center>
+              <h3>Loop</h3>
+              <img src="assets/loop_quad.png" width="700px"></im>
+              <h3>Metro</h3>
+              <img src="assets/metro_quad.png" width="700px"></im>
+            </center>
+            
         </div>
 
         <div class=" w3-container">
             <h2 class="w3-text-teal"> Poisson Regression</h2>
             <p>
-             Transit Analysis is important in the development of cities and road systems.
-             Supply chains and quality of life are affected by traffic patterns. In this project
-             we attempt to identify factors related to Santa Cruz Metro and UCSC loop bus Lateness
-             in order to make observations on the nature of traffic at UCSC.
+             Poisson regression is a form of Regression that models an outcome variable Y where mean is equal to variance. In our 
+             case this was minutes_late and indicated how late a bus be. 
+
+             Since Poisson must have values that are positive, we decided to modell only lateness.
+             The equation is defined as:
           </p>
-          <h3 class="w3-text-teal"> Results</h3>
-          <h3 class="w3-text-teal"> Validation</h3>
+          <center>
+            <img src="assets/pos_eq.png" width="400px"></im>
+            <h3>Loop</h3>
+            <img src="assets/poisson_loop.png" width="700px"></im>
+            <h3>Metro</h3>
+            <img src="assets/poisson_metro.png" width="600px"></im>
+          </center>
+
         </div>
 
         
